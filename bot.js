@@ -10,6 +10,9 @@ client.on("message", (message) => {
   if (message.content.includes("revolution")) {
     message.channel.send("`If you are considering revolting against our Admin, I would be very carfeul. Ze sees all.`");
   }
+  if (message.content.includes("revolt")) {
+    message.channel.send("`If you are considering revolting against our Admin, I would be very carfeul. Ze sees all.`");
+  }
   
 });
 
