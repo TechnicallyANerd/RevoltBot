@@ -7,15 +7,10 @@ client.on("ready", () => {
 
 client.on("message", (message) => {
   if(message.author.bot) return;
-  if (message.content.startsWith("ping")) {
-    message.channel.send("`pong!`");
+  if (message.content.includes("revolution")) {
+    message.channel.send("`If you are considering revolting against our Admin, I would be very carfeul. Ze sees all.`");
   }
-  if (message.content.startsWith("pong")) {
-    message.channel.send("`fuck off xo`");
-  }
-  if (message.content.startsWith("Ping")) {
-    message.channel.send("`nope`");
-  }
+  
 });
 
 client.login(process.env.BOT_TOKEN);
