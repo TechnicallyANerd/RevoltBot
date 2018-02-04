@@ -7,13 +7,13 @@ client.on("ready", () => {
 
 client.on("message", (message) => {
   if(message.author.bot) return;
-  if (message.content.includes("revolution")) {
+  if (message.content.toLowerCase().includes("revolution")) {
     message.channel.send("`If you are considering revolting against our Admin, I would be very careful. Ze sees all. Unless it's the feminist revolution in which case, go ahead.`");
   }
-  if (message.content.includes("revolt")) {
+  if (message.content.toLowerCase().includes("revolt")) {
     message.channel.send("`If you are considering revolting against our Admin, I would be very careful. Ze sees all. Unless it's the feminist revolution in which case, go ahead.`");
   }
-  if (message.content.toLowerCase().includes("test")) {
+  if (message.content.toLowerCase().includes("rev0lt")) {
     message.channel.send("`If you are considering revolting against our Admin, I would be very careful. Ze sees all. Unless it's the feminist revolution in which case, go ahead.`");
   }
   if (message.content.includes("revoIt")) {
