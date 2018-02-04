@@ -13,13 +13,16 @@ client.on("message", (message) => {
   if (message.content.includes("revolt")) {
     message.channel.send("`If you are considering revolting against our Admin, I would be very careful. Ze sees all. Unless it's the feminist revolution in which case, go ahead.`");
   }
+  if (message.content.toLowerCase().includes("test")) {
+    message.channel.send("`If you are considering revolting against our Admin, I would be very careful. Ze sees all. Unless it's the feminist revolution in which case, go ahead.`");
+  }
   if (message.content.includes("revoIt")) {
     message.channel.send("`If you are considering revolting against our Admin, I would be very careful. Ze sees all. Unless it's the feminist revolution in which case, go ahead.`");
   }
   if (message.content.includes("revoIution")) {
     message.channel.send("`If you are considering revolting against our Admin, I would be very careful. Ze sees all. Unless it's the feminist revolution in which case, go ahead.`");
   }
-  
+
 });
 
 client.login(process.env.BOT_TOKEN);
