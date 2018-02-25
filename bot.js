@@ -10,16 +10,16 @@ client.on("message", (message) => {
   if (message.content.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").includes("revolution")) {
     message.channel.send("`If you are considering revolting against our Admin, I would be very careful. Ze sees all. Unless it's the feminist revolution in which case, go ahead.`");
   }
-  if (message.content.toLowerCase().includes("revolt")) {
+  if (message.content.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").includes("revolt")) {
     message.channel.send("`If you are considering revolting against our Admin, I would be very careful. Ze sees all. Unless it's the feminist revolution in which case, go ahead.`");
   }
-  if (message.content.toLowerCase().includes("rev0lt")) {
+  if (message.content.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").includes("rev0lt")) {
     message.channel.send("`If you are considering revolting against our Admin, I would be very careful. Ze sees all. Unless it's the feminist revolution in which case, go ahead.`");
   }
-  if (message.content.includes("revoIt")) {
+  if (message.content.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").includes("revoIt")) {
     message.channel.send("`If you are considering revolting against our Admin, I would be very careful. Ze sees all. Unless it's the feminist revolution in which case, go ahead.`");
   }
-  if (message.content.includes("revoIution")) {
+  if (message.content.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").includes("revoIution")) {
     message.channel.send("`If you are considering revolting against our Admin, I would be very careful. Ze sees all. Unless it's the feminist revolution in which case, go ahead.`");
   }
 
