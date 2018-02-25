@@ -12,7 +12,7 @@ client.on("message", (message) => {
   else {
     var stripped_message = message.content.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
     catches.forEach(function(word) {
-      if (stripped_message.contains(word)) {
+      if (stripped_message.includes(word)) {
         console.log(word);
         message.channel.send(bot_message);
         return;
