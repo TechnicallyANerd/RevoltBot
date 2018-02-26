@@ -10,7 +10,8 @@ client.on("ready", () => {
 client.on("message", (message) => {
   if (message.author.bot) return;
   else {
-    var stripped_message = message.content.toLowerCase().replace(/\s[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+    var lower_message = message.content.toLowerCase();
+    var stripped_message = lower_message.replace(/[\s+]/g,'').replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,'');
     catches.forEach(function(word) {
       if (stripped_message.includes(word)) {
         console.log(word);
